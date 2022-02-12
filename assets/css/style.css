@@ -130,32 +130,10 @@ header nav ul li a {
 }
 /* TYPING STYLES / ANIMATION END */
 
-/* COMET STYLES / ANIMATION START */
-#comet {
-    position: absolute;
-    top: -25vh;
-    right: -25vw;
-    animation-duration: 1s;
-    animation-delay: 4s;
-    animation-name: comet;
-    animation-fill-mode: backwards;
-    transform: rotate(16deg);
-}
 
-@keyframes comet {
-    from {
-        top: -25vh;
-        right: -25vw;
-    }
-    to {
-        top: 100vh;
-        right: 100vw;
-    }
-}
-/* COMET STYLES / ANIMATION END */
 
-/* TRIANGLES STYLES / ANIMATION START */
-#triangle-container {
+/* HERO IMAGES STYLES / ANIMATION START */
+#hero-images-container {
     position: relative;
     height: 100%;
     overflow: hidden;
@@ -170,6 +148,7 @@ header nav ul li a {
     z-index: 1;
 }
 
+/* UPPER TRIANGLE STYLES / ANIMATION START */
 #upper-triangle {
     position: absolute;
     top: 40%;
@@ -182,7 +161,6 @@ header nav ul li a {
     z-index: 2;
 }
 
-/* UPPER TRIANGLE ANIMATION */
 @keyframes upper {
     from {
         top: 20%;
@@ -199,6 +177,7 @@ header nav ul li a {
     }
 }
 
+/* LOWER TRIANGLE STYLES / ANIMATION START */
 #lower-triangle {
     position: absolute;
     top: 45%;
@@ -212,7 +191,6 @@ header nav ul li a {
     z-index: 2;
 }
 
-/* LOWER TRIANGLE ANIMATION */
 @keyframes lower {
     from {
         top: 30%;
@@ -228,7 +206,32 @@ header nav ul li a {
         opacity: 1;
     }
 }
-/* TRIANGLE STYLES / ANIMATION END */
+
+/* COMET STYLES / ANIMATION START */
+#comet {
+    position: absolute;
+    top: -25vh;
+    right: -25vw;
+    animation-duration: .5s;
+    animation-delay: 4s;
+    animation-name: comet;
+    animation-fill-mode: backwards;
+    transform: rotate(16deg);
+    max-width: 75px;
+    max-height: auto;
+}
+
+@keyframes comet {
+    from {
+        top: -25vh;
+        right: -25vw;
+    }
+    to {
+        top: 100vh;
+        right: 100vw;
+    }
+}
+/* HERO IMAGES STYLES / ANIMATION END */
 /* HERO SECTION STYLES END */
 
 
