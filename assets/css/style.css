@@ -1,4 +1,142 @@
-body {
-    background: #222222;
-    color: antiquewhite;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    background: #525050;
+    color: antiquewhite;
+    overflow-x: hidden;
+}
+
+main {
+    /* padding-top: 7.5vh; */
+}
+
+/* HEADER / NAVBAR STYLES START */
+
+header {
+    background-color: #383737;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 0 1vh 10vw;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 9999;
+    position: fixed;
+    width: 100vw;
+    opacity: .75;
+}
+
+header div {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 22px;
+
+}
+
+header div p {
+    font-size: 10px;
+    padding-left: 15%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    width: 50vw;
+    padding: 2vh 9vw 2vh 0;
+}
+
+header nav ul li a {
+    color: antiquewhite;
+    text-decoration: none;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* HEADER / NAVBAR STYLES END */
+
+/* HERO SECTION STYLES START */
+.hero {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/hamish-weir-cuO6_mnbgPE-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    /* padding-top: 7.5vh; */
+}
+
+
+
+#triangle-container {
+    position: relative;
+}
+
+#base-triangle {
+    position: absolute;
+    top: 340px;
+    left: 50%;
+    margin-left: -300px;
+    /* margin-top: 15% */
+    /* left: 0;
+    right: 0;
+    margin: auto; */
+}
+
+#golden-top {
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    margin-left: -250px;
+    display: none;
+}
+
+#golden-bottom {
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    margin-left: -250px;
+    display: none;
+}
+
+#golden-top:hover, #golden-bottom:hover {
+    display: block;
+}
+
+
+
+/* HERO SECTION STYLES END */
+
+/* ABOUT SECTION STYLES START */
+.about {
+    height: 100vh;
+}
+/* ABOUT SECTION STYLES END */
+
+/* PROJECTS SECTION STYLES START */
+.projects {
+    height: 60px;
+}
+/* PROJECTS SECTION STYLES END */
+
+/* CONTACT SECTION STYLES START */
+.contact {
+    height: 60px;
+}
+/* CONTACT SECTION STYLES END */
+
+/* FOOTER STYLES START */
+footer {
+    background-color: #383737;
+    width: 100vw;
+    height: 4vh;
+}
+/* FOOTER STYLES END */
