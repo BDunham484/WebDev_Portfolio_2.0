@@ -72,6 +72,7 @@ header nav ul li a {
 .hero {
     height: 100vh;
     width: 100vw;
+    /* Photo by <a href="https://unsplash.com/@el_ham?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hamish Weir</a> on <a href="https://unsplash.com/s/photos/night-sky?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
     background-image: url(../images/hamish-weir-cuO6_mnbgPE-unsplash.jpg);
     background-size: cover;
     background-position: center;
@@ -93,21 +94,59 @@ header nav ul li a {
     margin-top: -300px;
 }
 
-#golden-top {
+#upper-triangle {
     position: absolute;
     top: 40%;
     left: 50%;
     margin-left: -250px;
-    /* display: none; */
+    animation-duration: 4s;
+    /* animation-delay: 2s; */
+    animation-name: upper;
 }
 
-#golden-bottom {
+@keyframes upper {
+    from {
+        top: 20%;
+        left: 50%;
+        margin-left: -250px;
+        opacity: 0;
+    }
+
+    to {
+        top: 40%;
+        left: 50%;
+        margin-left: -250px;
+        opacity: 1;
+    }
+}
+
+#lower-triangle {
     position: absolute;
     top: 45%;
     left: 50%;
     margin-left: -250px;
-    /* display: none; */
+    animation-duration: 4s;
+    /* animation-delay: 2s; */
+    animation-name: lower;
 }
+
+@keyframes lower {
+    from {
+        top: 30%;
+        left: 50%;
+        margin-left: -250px;
+        opacity: 0;
+    }
+
+    to {
+        top: 45%;
+        left: 50%;
+        margin-left: -250px;
+        opacity: 1;
+    }
+}
+
+
 
 /* #golden-top:hover, #golden-bottom:hover {
     display: block;
