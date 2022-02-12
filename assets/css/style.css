@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+*::selection {
+    background-color: transparent;
+}
+
 body {
     background: #525050;
     color: antiquewhite;
@@ -78,38 +82,36 @@ header nav ul li a {
 
 #triangle-container {
     position: relative;
+    height: 100%;
 }
 
 #base-triangle {
     position: absolute;
-    top: 340px;
+    top: 50%;
     left: 50%;
     margin-left: -300px;
-    /* margin-top: 15% */
-    /* left: 0;
-    right: 0;
-    margin: auto; */
+    margin-top: -300px;
 }
 
 #golden-top {
     position: absolute;
-    top: 500px;
+    top: 40%;
     left: 50%;
     margin-left: -250px;
-    display: none;
+    /* display: none; */
 }
 
 #golden-bottom {
     position: absolute;
-    top: 600px;
+    top: 45%;
     left: 50%;
     margin-left: -250px;
-    display: none;
+    /* display: none; */
 }
 
-#golden-top:hover, #golden-bottom:hover {
+/* #golden-top:hover, #golden-bottom:hover {
     display: block;
-}
+} */
 
 
 
