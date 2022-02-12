@@ -77,10 +77,60 @@ header nav ul li a {
     background-size: cover;
     background-position: center;
     /* padding-top: 7.5vh; */
+    
+}
+
+/* TYPING STYLES / ANIMATION START*/
+.typing {
+    color: antiquewhite;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    height: 1%;
+    width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    display: inline-block;
 }
 
 
+#upper {
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: typing 6s forwards;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    overflow: hidden;
+    white-space: nowrap;
+}
 
+#lower {
+    position: absolute;
+    top: 87vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: typing 6s forwards;
+    animation-delay: 4s;
+    animation-fill-mode: backwards;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+/* TYPING STYLES / ANIMATION END */
+
+/* TRIANGLES STYLES / ANIMATION START */
 #triangle-container {
     position: relative;
     height: 100%;
@@ -100,10 +150,12 @@ header nav ul li a {
     left: 50%;
     margin-left: -250px;
     animation-duration: 4s;
-    /* animation-delay: 2s; */
+    animation-delay: 1s;
     animation-name: upper;
+    animation-fill-mode: backwards;
 }
 
+/* UPPER TRIANGLE ANIMATION */
 @keyframes upper {
     from {
         top: 20%;
@@ -126,10 +178,13 @@ header nav ul li a {
     left: 50%;
     margin-left: -250px;
     animation-duration: 4s;
-    /* animation-delay: 2s; */
+    animation-delay: 1s;
     animation-name: lower;
+    overflow: hidden;
+    animation-fill-mode: backwards;
 }
 
+/* LOWER TRIANGLE ANIMATION */
 @keyframes lower {
     from {
         top: 30%;
@@ -145,12 +200,13 @@ header nav ul li a {
         opacity: 1;
     }
 }
+/* TRIANGLE STYLES / ANIMATION END */
+
+/* TYPING LOWER STYLES / ANIMATION START  */
+
+/* TYPING LOWER STYLES / ANIMATION END */
 
 
-
-/* #golden-top:hover, #golden-bottom:hover {
-    display: block;
-} */
 
 
 
