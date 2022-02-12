@@ -82,7 +82,6 @@ header nav ul li a {
 
 /* TYPING STYLES / ANIMATION START*/
 .typing {
-    color: antiquewhite;
     font-size: 50px;
     text-align: center;
     position: relative;
@@ -91,6 +90,7 @@ header nav ul li a {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
     display: inline-block;
+    opacity: .75;
 }
 
 
@@ -130,10 +130,35 @@ header nav ul li a {
 }
 /* TYPING STYLES / ANIMATION END */
 
+/* COMET STYLES / ANIMATION START */
+#comet {
+    position: absolute;
+    top: -25vh;
+    right: -25vw;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-name: comet;
+    animation-fill-mode: backwards;
+    transform: rotate(16deg);
+}
+
+@keyframes comet {
+    from {
+        top: -25vh;
+        right: -25vw;
+    }
+    to {
+        top: 100vh;
+        right: 100vw;
+    }
+}
+/* COMET STYLES / ANIMATION END */
+
 /* TRIANGLES STYLES / ANIMATION START */
 #triangle-container {
     position: relative;
     height: 100%;
+    overflow: hidden;
 }
 
 #base-triangle {
@@ -142,6 +167,7 @@ header nav ul li a {
     left: 50%;
     margin-left: -300px;
     margin-top: -300px;
+    z-index: 1;
 }
 
 #upper-triangle {
@@ -153,6 +179,7 @@ header nav ul li a {
     animation-delay: 1s;
     animation-name: upper;
     animation-fill-mode: backwards;
+    z-index: 2;
 }
 
 /* UPPER TRIANGLE ANIMATION */
@@ -182,6 +209,7 @@ header nav ul li a {
     animation-name: lower;
     overflow: hidden;
     animation-fill-mode: backwards;
+    z-index: 2;
 }
 
 /* LOWER TRIANGLE ANIMATION */
@@ -201,21 +229,16 @@ header nav ul li a {
     }
 }
 /* TRIANGLE STYLES / ANIMATION END */
-
-/* TYPING LOWER STYLES / ANIMATION START  */
-
-/* TYPING LOWER STYLES / ANIMATION END */
-
-
-
-
-
 /* HERO SECTION STYLES END */
+
 
 /* ABOUT SECTION STYLES START */
 .about {
     height: 100vh;
+    width: 100vw;
 }
+
+
 /* ABOUT SECTION STYLES END */
 
 /* PROJECTS SECTION STYLES START */
