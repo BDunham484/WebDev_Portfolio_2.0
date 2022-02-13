@@ -2,20 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 *::selection {
     background-color: transparent;
 }
 
-body {
-    background: #525050;
-    color: antiquewhite;
+html, body {
     overflow-x: hidden;
 }
 
+body {
+    background: #525050;
+    color: antiquewhite;
+}
+
 main {
-    /* padding-top: 7.5vh; */
+    
 }
 
 /* HEADER / NAVBAR STYLES START */
@@ -75,9 +79,7 @@ header nav ul li a {
     /* Photo by <a href="https://unsplash.com/@el_ham?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hamish Weir</a> on <a href="https://unsplash.com/s/photos/night-sky?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
     background-image: url(../images/hamish-weir-cuO6_mnbgPE-unsplash.jpg);
     background-size: cover;
-    background-position: center;
-    /* padding-top: 7.5vh; */
-    
+    background-position: center;  
 }
 
 /* TYPING STYLES / ANIMATION START*/
@@ -86,7 +88,7 @@ header nav ul li a {
     text-align: center;
     position: relative;
     height: 1%;
-    width: 100vw;
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
     display: inline-block;
@@ -100,9 +102,8 @@ header nav ul li a {
     left: 0;
     right: 0;
     margin: 0 auto;
-    animation: typing 6s forwards;
-    animation-delay: 2s;
-    animation-fill-mode: backwards;
+    animation: typing 6s forwards 2s, fadeout 5s forwards 10s;
+    animation-fill-mode: both;
     overflow: hidden;
     white-space: nowrap;
 }
@@ -113,9 +114,8 @@ header nav ul li a {
     left: 0;
     right: 0;
     margin: 0 auto;
-    animation: typing 6s forwards;
-    animation-delay: 4s;
-    animation-fill-mode: backwards;
+    animation: typing 6s forwards 4s, fadeout 5s forwards 10s;
+    animation-fill-mode: both;
     overflow: hidden;
     white-space: nowrap;
 }
@@ -126,6 +126,15 @@ header nav ul li a {
     }
     to {
         width: 100%;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
     }
 }
 /* TYPING STYLES / ANIMATION END */
@@ -208,20 +217,31 @@ header nav ul li a {
 }
 
 /* COMET STYLES / ANIMATION START */
-#comet {
+.comet {
     position: absolute;
     top: -25vh;
     right: -25vw;
-    animation-duration: .5s;
+    animation-duration: .65s;
     animation-delay: 4s;
     animation-name: comet;
     animation-fill-mode: backwards;
-    transform: rotate(16deg);
+    transform: rotate(10deg);
     max-width: 75px;
     max-height: auto;
-}
+} 
 
 @keyframes comet {
+    from {
+        top: -25vh;
+        right: -25vw;
+    }
+    to {
+        top: 100vh;
+        right: 100vw;
+    }
+}
+
+@keyframes const-comet {
     from {
         top: -25vh;
         right: -25vw;
@@ -238,7 +258,7 @@ header nav ul li a {
 /* ABOUT SECTION STYLES START */
 .about {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
 
@@ -259,7 +279,7 @@ header nav ul li a {
 /* FOOTER STYLES START */
 footer {
     background-color: #383737;
-    width: 100vw;
+    width: 100%;
     height: 4vh;
 }
 /* FOOTER STYLES END */
