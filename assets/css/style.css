@@ -350,34 +350,49 @@ header nav ul li a {
     background-position: center;
     background-size: cover;   
     display: flex;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
 }
 
-.project-wrapper {
-    width: 80%;
-    height: 30%;
+#projects-container {
+    height: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.project-wrapper:hover + .project {
-    padding-left: 200px;
+.project-wrapper {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.project-wrapper:hover .project{
+    margin-left: 40vw;
 }
 
 .project {
-    width: 60%;
-    height: 30%;
+    width: 20vw;
+    height: 15vh;
     border: 3px solid antiquewhite;
-    background-color: #2020202;
+    background-color: #202020;
+}
+
+.project:hover {
+    margin-left: 10vw;
 }
 /* PROJECTS SECTION STYLES END */
 
 /* CONTACT SECTION STYLES START */
 .contact {
-    height: 60px;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #0a1f25 0, #0e1316 100%);
 }
 /* CONTACT SECTION STYLES END */
 
