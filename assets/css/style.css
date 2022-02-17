@@ -344,55 +344,80 @@ header nav ul li a {
 /* PROJECTS SECTION STYLES START */
 #projects {
     width: 100vw;
-    height: 100vh;
-    /* background: linear-gradient(0deg, #144553 0, #0e1316 100%); */
+    min-height: 100vh;
+    background: linear-gradient(0deg, #0a1f25 0, #0e1316 100%);
     background-image: url(../images/transparent-5-moon-180.png),linear-gradient(0deg, #0a1f25 0, #0e1316 100%); 
     background-position: center;
     background-size: cover;   
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
-}
+    
 
-#projects-container {
-    height: 80%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .project-wrapper {
-    width: 80%;
-    height: 20%;
+    width: 65vw;
+    min-height: 75vh;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 6vh 0;
 }
 
-.project-wrapper:hover .project{
-    margin-left: 40vw;
-}
-
-.project {
-    width: 20vw;
-    height: 15vh;
+#projects img {
+    width: 765px;
+    height: auto;
     border: 3px solid antiquewhite;
-    background-color: #202020;
+    margin-top: 5%;
+    transition: .5s;
 }
 
-.project:hover {
-    margin-left: 10vw;
+#projects img:hover {
+    width: 800px;
+    height: auto;
+    opacity: .5;
 }
+
+.project-wrapper a {
+    position: relative;
+}
+
+.project-wrapper div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    /* background-color: lightgray; */
+    transition: all .5s;
+}
+
+.project-wrapper div:hover, #projects img {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.project-wrapper div p {
+   font-size: 32px;
+    color: antiquewhite;
+    text-align: center;
+    padding: 15vh 5vw 0 5vw;
+}
+
+
 /* PROJECTS SECTION STYLES END */
 
 /* CONTACT SECTION STYLES START */
-.contact {
+#contact {
     width: 100vw;
     height: 100vh;
     background: linear-gradient(180deg, #0a1f25 0, #0e1316 100%);
+    border-top: 1px solid antiquewhite;
 }
 /* CONTACT SECTION STYLES END */
 
