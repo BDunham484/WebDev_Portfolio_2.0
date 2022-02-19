@@ -268,6 +268,7 @@ header nav ul li a {
     justify-content: space-around;
     background: linear-gradient(45deg, #383737 0%,#202020 100%);
     padding-top: 4%;
+    z-index: 1;
 }
 
 
@@ -473,7 +474,293 @@ footer {
 /* FOOTER STYLES END */
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 1000px) {
+/* LANDSCAPE MODE */
+@media screen and (orientation: landscape) 
+                and (max-width: 1000px) {
+    /* HERO SECTION */
+    #base-triangle {
+        max-width: 200px;
+        margin-left: -100px;
+        margin-top: -110px;    
+    }
+
+    #upper-triangle, #lower-triangle {
+        max-width: 175px;
+        margin-left: -87.5px;   
+    }
+
+    #upper-triangle {
+        top: 37%;
+    }
+
+    #lower-triangle {
+        top: 41%;
+    }
+
+    @keyframes upper {
+        from {
+            top: 15%;
+            left: 50%;
+            margin-left: -87.5px;
+            opacity: 0;
+        }
+    
+        to {
+            top: 37%;
+            left: 50%;
+            margin-left: -87.5px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes lower {
+        from {
+            top: 25%;
+            left: 50%;
+            margin-left: -87.5px;
+            opacity: 0;
+        }
+    
+        to {
+            top: 41%;
+            left: 50%;
+            margin-left: -87.5px;
+            opacity: 1;
+        }
+    }
+
+
+    /* ABOUT SECTION */
+    .about-me div:nth-child(1) img {
+        width: 25vw;
+    }
+
+    .about-me div:nth-child(2) h2 {
+        font-size: 3vh;
+    }
+
+    .about-me div:nth-child(2) {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .about-me div:nth-child(3) img {
+        width: 8vw;
+        height: auto;
+    }
+
+    .list-styles {
+        height: 70%;
+        margin-top: 7vh;
+    }
+
+    .bullet-design-left {
+        padding-left: 25px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        
+    }
+    
+    .bullet-design-right {
+        padding-left: 15px;
+    }
+
+    .skills {
+        font-size: 1.5vw;
+    }
+
+    .skills p {
+        padding: 5px 0 5px 5px;
+    }
+
+    /* PROJECTS SECTION */
+    #main-img {
+        width: 90vw;
+    }
+
+    /* CONTACT SECTION */
+    #contact div {
+        width: 70vw;
+    }
+
+    #contact ul {
+        font-size: 2vw;
+        height: 85%;
+    }
+
+    #contact ul li {
+        padding: 10px 0 10px 10px;
+        width: 77%;
+    }
+}
+
+@media screen and (orientation: landscape) 
+                and (min-width: 1000px) {
+    /* HERO SECTION */
+    #base-triangle {
+        max-width: 320px;
+        margin-left: -160px;
+        margin-top: -160px;   
+    }
+
+    #upper-triangle, #lower-triangle {
+        max-width: 280px;
+        margin-left: -140px;
+    }
+
+    #upper-triangle {
+        top: 43%;
+    }
+
+    #lower-triangle {
+        top: 47%;
+    }
+
+    @keyframes upper {
+        from {
+            top: 15%;
+            left: 50%;
+            margin-left: -140px;
+            opacity: 0;
+        }
+    
+        to {
+            top: 43%;
+            left: 50%;
+            margin-left: -140px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes lower {
+        from {
+            top: 25%;
+            left: 50%;
+            margin-left: -140px;
+            opacity: 0;
+        }
+    
+        to {
+            top: 47%;
+            left: 50%;
+            margin-left: -140px;
+            opacity: 1;
+        }
+    }
+
+    /* ABOUT SECTION */
+    .about-me div:nth-child(1) img {
+        width: 25vw;
+    }
+
+    .about-me div:nth-child(2) h2 {
+        font-size: 3vh;
+    }
+
+    .about-me div:nth-child(2) {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .about-me div:nth-child(3) img {
+        width: 8vw;
+        height: auto;
+    }
+
+    .list-styles {
+        height: 80%;
+        margin-top: 7vh;
+    }
+
+    .skills {
+        font-size: 1.5vw;
+    }
+
+    .skills p {
+        padding: 25px 0 25px 5px;
+    }
+
+    /* PROJECTS SECTION */
+    #main-img {
+        width: 75vw;
+    }
+
+    .wrapped-img {
+        width: 70vw;
+    }
+
+    /* CONTACT SECTION */
+    #contact ul {
+        font-size: 2vw;
+    }
+
+    #contact ul li {
+        padding: 10px 0 10px 10px;
+        width: 77%;
+    }
+
+    #contact div {
+        width: 70vw;
+    }
+}
+
+
+/* NEST HUB LANDSCAPE MODE */
+@media screen 
+and (orientation: landscape) 
+and (device-width: 1024px)
+and (device-height: 600px) {
+    #upper-triangle, #lower-triangle {
+        max-width: 280px;
+        margin-left: -140px;
+    }
+
+    #upper-triangle {
+        top: 35%;
+    }
+
+    #lower-triangle {
+        top: 40%;
+    }
+
+    @keyframes upper {
+        from {
+            top: 15%;
+            left: 50%;
+            margin-left: -140px;
+            opacity: 0;
+        }
+    
+        to {
+            top: 35%;
+            left: 50%;
+            margin-left: -140px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes lower {
+        from {
+            top: 25%;
+            left: 50%;
+            margin-left: -140px;
+            opacity: 0;
+        }
+    
+        to {
+            top: 40%;
+            left: 50%;
+            margin-left: -140px;
+            opacity: 1;
+        }
+    }
+}
+
+
+
+
+
+@media screen and (orientation: portrait) and (max-width: 1000px) {
     .comet {
     transform: rotate(-15deg);
     }
@@ -513,60 +800,54 @@ footer {
     }
 }
 
-@media screen and (orientation: landscape) {
-    #upper {
-        top: 12vh;
+
+
+@media screen and (orientation: portrait) and (max-width: 769px) {
+    header nav ul {
+        padding: 2px 0;
     }
 
     #base-triangle {
-        top: 45%;
+        max-width: 500px;
+        margin-left: -250px;
+        margin-top: -250px;    
     }
 
-    #upper-triangle {
-        top: 30%;
+    #upper-triangle, #lower-triangle {
+        max-width: 450px;
+        margin-left: -225px;   
     }
-    
+
     @keyframes upper {
-        from {
-            top: 10%;
-            left: 50%;
-            margin-left: -250px;
-            opacity: 0;
-        }
-    
-        to {
-            top: 30%;
-            left: 50%;
-            margin-left: -250px;
-            opacity: 1;
-        }
-    }
-    
-    /* LOWER TRIANGLE STYLES / ANIMATION START */
-    #lower-triangle {
-        top: 35%;
-    }
-    
-    @keyframes lower {
         from {
             top: 20%;
             left: 50%;
-            margin-left: -250px;
+            margin-left: -225px;
             opacity: 0;
         }
     
         to {
-            top: 35%;
+            top: 40%;
             left: 50%;
-            margin-left: -250px;
+            margin-left: -225px;
             opacity: 1;
         }
     }
-}
 
-@media screen and (max-width: 768px) {
-    header nav ul {
-        padding: 2px 0;
+    @keyframes lower {
+        from {
+            top: 30%;
+            left: 50%;
+            margin-left: -225px;
+            opacity: 0;
+        }
+    
+        to {
+            top: 45%;
+            left: 50%;
+            margin-left: -225px;
+            opacity: 1;
+        }
     }
 
     .skills {
@@ -650,28 +931,32 @@ header div p {
     }
 
     #base-triangle {
-        max-width: 350px;
-        margin-left: -175px;
-        margin-top: -175px;    
+        max-width: 250px;
+        margin-left: -125px;
+        margin-top: -125px;    
     }
 
     #upper-triangle, #lower-triangle {
-        max-width: 300px;
-        margin-left: -150px;   
+        max-width: 225px;
+        margin-left: -112.5px;   
+    }
+
+    #upper-triangle {
+        top: 42.5%;
     }
 
     @keyframes upper {
         from {
             top: 20%;
             left: 50%;
-            margin-left: -150px;
+            margin-left: -112.5px;
             opacity: 0;
         }
     
         to {
-            top: 40%;
+            top: 42.5%;
             left: 50%;
-            margin-left: -150px;
+            margin-left: -112.5px;
             opacity: 1;
         }
     }
@@ -680,14 +965,14 @@ header div p {
         from {
             top: 30%;
             left: 50%;
-            margin-left: -150px;
+            margin-left: -112.5px;
             opacity: 0;
         }
     
         to {
             top: 45%;
             left: 50%;
-            margin-left: -150px;
+            margin-left: -112.5px;
             opacity: 1;
         }
     }
@@ -736,6 +1021,8 @@ header div p {
     #contact ul li {
         padding: 30px 0 30px 5px;
 }
+
+
 
 
 
