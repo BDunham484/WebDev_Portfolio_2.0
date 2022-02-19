@@ -594,8 +594,122 @@ footer {
     }
 }
 
-@media screen and (orientation: landscape) 
+/* @media screen and (orientation: landscape) 
                 and (min-width: 1000px) {
+    HERO SECTION
+    #base-triangle {
+        max-width: 320px;
+        margin-left: -160px;
+        margin-top: -160px;   
+    }
+
+    #upper-triangle, #lower-triangle {
+        max-width: 280px;
+        margin-left: -140px;
+    }
+
+    #upper-triangle {
+        top: 43%;
+    }
+
+    #lower-triangle {
+        top: 47%;
+    }
+
+    @keyframes upper {
+        from {
+            top: 15%;
+            left: 50%;
+            margin-left: -140px;
+            opacity: 0;
+        }
+    
+        to {
+            top: 43%;
+            left: 50%;
+            margin-left: -140px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes lower {
+        from {
+            top: 25%;
+            left: 50%;
+            margin-left: -140px;
+            opacity: 0;
+        }
+    
+        to {
+            top: 47%;
+            left: 50%;
+            margin-left: -140px;
+            opacity: 1;
+        }
+    }
+
+    ABOUT SECTION
+    .about-me div:nth-child(1) img {
+        width: 25vw;
+    }
+
+    .about-me div:nth-child(2) h2 {
+        font-size: 3vh;
+    }
+
+    .about-me div:nth-child(2) {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .about-me div:nth-child(3) img {
+        width: 8vw;
+        height: auto;
+    }
+
+    .list-styles {
+        height: 80%;
+        margin-top: 7vh;
+    }
+
+    .skills {
+        font-size: 1.5vw;
+    }
+
+    .skills p {
+        padding: 25px 0 25px 5px;
+    }
+
+    PROJECTS SECTION
+    #main-img {
+        width: 75vw;
+    }
+
+    .wrapped-img {
+        width: 70vw;
+    }
+
+    CONTACT SECTION
+    #contact ul {
+        font-size: 2vw;
+    }
+
+    #contact ul li {
+        padding: 10px 0 10px 10px;
+        width: 77%;
+    }
+
+    #contact div {
+        width: 70vw;
+    }
+} */
+
+
+/* iPAD AIR LANDSCAPE MODE */
+@media screen 
+and (orientation: landscape)
+and (device-width: 1180px)
+and (device-height: 820px) {
     /* HERO SECTION */
     #base-triangle {
         max-width: 320px;
@@ -658,7 +772,233 @@ footer {
     }
 
     .about-me div:nth-child(2) {
-        width: 90%;
+        width: 60%;
+        padding: 10px;
+    }
+
+    .about-me div:nth-child(3) img {
+        width: 8vw;
+        height: auto;
+    }
+
+    .list-styles {
+        height: 80%;
+        margin-top: 7vh;
+    }
+
+    .skills {
+        font-size: 1.5vw;
+    }
+
+    .skills p {
+        padding: 25px 0 25px 5px;
+    }
+
+    /* PROJECTS SECTION */
+    #main-img {
+        width: 75vw;
+    }
+
+    .wrapped-img {
+        width: 70vw;
+    }
+
+    CONTACT SECTION
+    #contact ul {
+        font-size: 2vw;
+    }
+
+    #contact ul li {
+        padding: 10px 0 10px 10px;
+        width: 77%;
+    }
+
+    #contact div {
+        width: 70vw;
+    }
+}
+
+/* iPAD MINI LANDSCAPE MODE */
+@media screen 
+and (orientation: landscape)
+and (device-width: 1024px)
+and (device-height: 768px) {
+    /* HERO SECTION */
+    #base-triangle {
+        max-width: 320px;
+        margin-left: -160px;
+        margin-top: -160px;   
+    }
+
+    #upper-triangle, #lower-triangle {
+        max-width: 280px;
+        margin-left: -140px;
+    }
+
+    #upper-triangle {
+        top: 43%;
+    }
+
+    #lower-triangle {
+        top: 47%;
+    }
+
+    @keyframes upper {
+        from {
+            top: 15%;
+            left: 50%;
+            margin-left: -140px;
+            opacity: 0;
+        }
+    
+        to {
+            top: 43%;
+            left: 50%;
+            margin-left: -140px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes lower {
+        from {
+            top: 25%;
+            left: 50%;
+            margin-left: -140px;
+            opacity: 0;
+        }
+    
+        to {
+            top: 47%;
+            left: 50%;
+            margin-left: -140px;
+            opacity: 1;
+        }
+    }
+
+    /* ABOUT SECTION */
+    .about-me div:nth-child(1) img {
+        width: 25vw;
+    }
+
+    .about-me div:nth-child(2) h2 {
+        font-size: 3vh;
+    }
+
+    .about-me div:nth-child(2) {
+        width: 60%;
+        padding: 10px;
+    }
+
+    .about-me div:nth-child(3) img {
+        width: 8vw;
+        height: auto;
+    }
+
+    .list-styles {
+        height: 80%;
+        margin-top: 7vh;
+    }
+
+    .skills {
+        font-size: 1.5vw;
+    }
+
+    .skills p {
+        padding: 25px 0 25px 5px;
+    }
+
+    /* PROJECTS SECTION */
+    #main-img {
+        width: 75vw;
+    }
+
+    .wrapped-img {
+        width: 70vw;
+    }
+
+    CONTACT SECTION
+    #contact ul {
+        font-size: 2vw;
+    }
+
+    #contact ul li {
+        padding: 10px 0 10px 10px;
+        width: 77%;
+    }
+
+    #contact div {
+        width: 70vw;
+    }
+}
+
+/* SURFACE PRO 7 LANDSCAPE MODE */
+@media screen 
+and (orientation: landscape)
+and (device-width: 1368px)
+and (device-height: 912px) {
+    /* HERO SECTION */
+    #base-triangle {
+        max-width: 320px;
+        margin-left: -160px;
+        margin-top: -160px;   
+    }
+
+    #upper-triangle, #lower-triangle {
+        max-width: 280px;
+        margin-left: -140px;
+    }
+
+    #upper-triangle {
+        top: 43%;
+    }
+
+    #lower-triangle {
+        top: 47%;
+    }
+
+    @keyframes upper {
+        from {
+            top: 15%;
+            left: 50%;
+            margin-left: -140px;
+            opacity: 0;
+        }
+    
+        to {
+            top: 43%;
+            left: 50%;
+            margin-left: -140px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes lower {
+        from {
+            top: 25%;
+            left: 50%;
+            margin-left: -140px;
+            opacity: 0;
+        }
+    
+        to {
+            top: 47%;
+            left: 50%;
+            margin-left: -140px;
+            opacity: 1;
+        }
+    }
+
+    /* ABOUT SECTION */
+    .about-me div:nth-child(1) img {
+        width: 25vw;
+    }
+
+    .about-me div:nth-child(2) h2 {
+        font-size: 3vh;
+    }
+
+    .about-me div:nth-child(2) {
+        width: 60%;
         padding: 10px;
     }
 
@@ -705,11 +1045,22 @@ footer {
 }
 
 
+
+
+
+
 /* NEST HUB LANDSCAPE MODE */
 @media screen 
 and (orientation: landscape) 
 and (device-width: 1024px)
 and (device-height: 600px) {
+    /* HERO SECTION */
+    #base-triangle {
+        max-width: 320px;
+        margin-left: -160px;
+        margin-top: -160px;   
+    }
+
     #upper-triangle, #lower-triangle {
         max-width: 280px;
         margin-left: -140px;
@@ -754,7 +1105,176 @@ and (device-height: 600px) {
             opacity: 1;
         }
     }
+
+    /* ABOUT SECTION */
+    .about-me div:nth-child(1) img {
+        width: 25vw;
+    }
+
+    .about-me div:nth-child(2) h2 {
+        font-size: 3vh;
+    }
+
+    .about-me div:nth-child(2) {
+        width: 60%;
+        padding: 10px;
+    }
+
+    .about-me div:nth-child(3) img {
+        width: 8vw;
+        height: auto;
+    }
+
+    .list-styles {
+        height: 80%;
+        margin-top: 7vh;
+    }
+
+    .skills {
+        font-size: 1.5vw;
+    }
+
+    .skills p {
+        padding: 25px 0 25px 5px;
+    }
+
+    /* PROJECTS SECTION */
+    #main-img {
+        width: 75vw;
+    }
+
+    .wrapped-img {
+        width: 70vw;
+    }
+
+    /* CONTACT SECTION */
+    #contact ul {
+        font-size: 2vw;
+    }
+
+    #contact ul li {
+        padding: 10px 0 10px 10px;
+        width: 77%;
+    }
+
+    #contact div {
+        width: 70vw;
+    }
 }
+
+/* NEST HUB MAX LANDSCAPE MODE */
+@media screen 
+and (orientation: landscape) 
+and (device-width: 1280px)
+and (device-height: 800px) {
+    /* HERO SECTION */
+    #base-triangle {
+        max-width: 320px;
+        margin-left: -160px;
+        margin-top: -160px;   
+    }
+
+    #upper-triangle, #lower-triangle {
+        max-width: 280px;
+        margin-left: -140px;
+    }
+
+    #upper-triangle {
+        top: 40%;
+    }
+
+    #lower-triangle {
+        top: 45;
+    }
+
+    @keyframes upper {
+        from {
+            top: 15%;
+            left: 50%;
+            margin-left: -140px;
+            opacity: 0;
+        }
+    
+        to {
+            top: 40%;
+            left: 50%;
+            margin-left: -140px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes lower {
+        from {
+            top: 25%;
+            left: 50%;
+            margin-left: -140px;
+            opacity: 0;
+        }
+    
+        to {
+            top: 45%;
+            left: 50%;
+            margin-left: -140px;
+            opacity: 1;
+        }
+    }
+
+    /* ABOUT SECTION */
+    .about-me div:nth-child(1) img {
+        width: 25vw;
+    }
+
+    .about-me div:nth-child(2) h2 {
+        font-size: 3vh;
+    }
+
+    .about-me div:nth-child(2) {
+        width: 60%;
+        padding: 10px;
+    }
+
+    .about-me div:nth-child(3) img {
+        width: 8vw;
+        height: auto;
+    }
+
+    .list-styles {
+        height: 80%;
+        margin-top: 7vh;
+    }
+
+    .skills {
+        font-size: 1.5vw;
+    }
+
+    .skills p {
+        padding: 25px 0 25px 5px;
+    }
+
+    /* PROJECTS SECTION */
+    #main-img {
+        width: 75vw;
+    }
+
+    .wrapped-img {
+        width: 70vw;
+    }
+
+    /* CONTACT SECTION */
+    #contact ul {
+        font-size: 2vw;
+    }
+
+    #contact ul li {
+        padding: 10px 0 10px 10px;
+        width: 77%;
+    }
+
+    #contact div {
+        width: 70vw;
+    }
+}
+
 
 
 
@@ -867,7 +1387,9 @@ and (device-height: 600px) {
     }
 }
 
-@media screen and (max-width: 575px) {
+@media screen 
+and (orientation: portrait)
+and (max-width: 575px) {
     header nav ul {
         margin-right: 5vw;
         width: 37vw;
@@ -878,28 +1400,28 @@ and (device-height: 600px) {
     }
 
     #base-triangle {
-        max-width: 500px;
-        margin-left: -250px;
-        margin-top: -250px;    
+        max-width: 320px;
+        margin-left: -160px;
+        margin-top: -160px;    
     }
 
     #upper-triangle, #lower-triangle {
-        max-width: 450px;
-        margin-left: -225px;   
+        max-width: 280px;
+        margin-left: -140px;   
     }
 
     @keyframes upper {
         from {
             top: 20%;
             left: 50%;
-            margin-left: -225px;
+            margin-left: -140px;
             opacity: 0;
         }
     
         to {
             top: 40%;
             left: 50%;
-            margin-left: -225px;
+            margin-left: -140px;
             opacity: 1;
         }
     }
@@ -908,16 +1430,25 @@ and (device-height: 600px) {
         from {
             top: 30%;
             left: 50%;
-            margin-left: -225px;
+            margin-left: -140px;
             opacity: 0;
         }
     
         to {
             top: 45%;
             left: 50%;
-            margin-left: -225px;
+            margin-left: -140px;
             opacity: 1;
         }
+    }
+
+    /* ABOUT SECTION */
+    .bullet-design-left {
+        padding: 5px 0 5px 30px;
+    }
+
+    .skills p {
+        width: 32vw;
     }
 }
 
