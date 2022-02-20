@@ -556,8 +556,6 @@ and (min-width: 768px) {
 
 }
 
-/* MEDIA QUERIES */
-/* LANDSCAPE MODE */
 @media screen 
 and (orientation: landscape) 
 and (max-width: 1000px)
@@ -892,7 +890,7 @@ and (device-height: 820px) {
         width: 70vw;
     }
 
-    CONTACT SECTION
+    /* CONTACT SECTION */
     #contact ul {
         font-size: 2vw;
     }
@@ -1431,7 +1429,7 @@ and (device-height: 800px) {
     }
 
     #lower-triangle {
-        top: 44%;
+        top: 46%;
     }
 
     @keyframes upper {
@@ -1459,7 +1457,7 @@ and (device-height: 800px) {
         }
     
         to {
-            top: 44%;
+            top: 46%;
             left: 50%;
             margin-left: -180px;
             opacity: 1;
@@ -1553,8 +1551,12 @@ header div p {
     padding-left: 0;
 }
 
+    #upper {
+        top: 33vh;
+    }
+
     #lower {
-        top: 91vh;
+        top: 75vh;
     }
 
     #base-triangle {
@@ -1597,7 +1599,7 @@ header div p {
         }
     
         to {
-            top: 45%;
+            top: 46%;
             left: 50%;
             margin-left: -112.5px;
             opacity: 1;
