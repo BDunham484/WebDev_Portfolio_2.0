@@ -473,10 +473,95 @@ footer {
 }
 /* FOOTER STYLES END */
 
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1900px) {
+
+    #main-img {
+        width: 55vw;
+    }
+
+    #main-img:hover {
+        width: 58vw;
+    }
+
+    .wrapped-img {
+        width: 50vw;
+    }
+
+    .wrapped-img:hover {
+        width: 53vw;
+    }
+}
+
+@media screen 
+and (max-width: 1000px)
+and (min-width: 768px) {
+    #base-triangle {
+        max-width: 420px;
+        margin-left: -210px;
+        margin-top: -210px;   
+    }
+
+    #upper-triangle, #lower-triangle {
+        max-width: 360px;
+        margin-left: -180px;
+    }
+
+    #upper-triangle {
+        top: 40%;
+    }
+
+    #lower-triangle {
+        top: 44%;
+    }
+
+    @keyframes upper {
+        from {
+            top: 15%;
+            left: 50%;
+            margin-left: -180px;
+            opacity: 0;
+        }
+    
+        to {
+            top: 40%;
+            left: 50%;
+            margin-left: -180px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes lower {
+        from {
+            top: 25%;
+            left: 50%;
+            margin-left: -180px;
+            opacity: 0;
+        }
+    
+        to {
+            top: 44%;
+            left: 50%;
+            margin-left: -180px;
+            opacity: 1;
+        }
+    }
+
+}
+
 /* MEDIA QUERIES */
 /* LANDSCAPE MODE */
-@media screen and (orientation: landscape) 
-                and (max-width: 1000px) {
+@media screen 
+and (orientation: landscape) 
+and (max-width: 1000px)
+ {
     /* HERO SECTION */
     #base-triangle {
         max-width: 200px;
@@ -578,6 +663,17 @@ footer {
         width: 90vw;
     }
 
+    #main-img:hover {
+        width: 93vw;
+    }
+
+    .wrapped-img {
+        width: 80vw;
+    }
+
+    .wrapped-img:hover {
+        width: 83vw;
+    }
     /* CONTACT SECTION */
     #contact div {
         width: 70vw;
@@ -594,40 +690,42 @@ footer {
     }
 }
 
-/* @media screen and (orientation: landscape) 
-                and (min-width: 1000px) {
-    HERO SECTION
+
+@media screen 
+and (max-width: 2000px)
+and (min-width: 1000px) {
+    /* HERO SECTION */
     #base-triangle {
-        max-width: 320px;
-        margin-left: -160px;
-        margin-top: -160px;   
+        max-width: 420px;
+        margin-left: -210px;
+        margin-top: -210px;   
     }
 
     #upper-triangle, #lower-triangle {
-        max-width: 280px;
-        margin-left: -140px;
+        max-width: 360px;
+        margin-left: -180px;
     }
 
     #upper-triangle {
-        top: 43%;
+        top: 40%;
     }
 
     #lower-triangle {
-        top: 47%;
+        top: 44%;
     }
 
     @keyframes upper {
         from {
             top: 15%;
             left: 50%;
-            margin-left: -140px;
+            margin-left: -180px;
             opacity: 0;
         }
     
         to {
-            top: 43%;
+            top: 40%;
             left: 50%;
-            margin-left: -140px;
+            margin-left: -180px;
             opacity: 1;
         }
     }
@@ -636,19 +734,19 @@ footer {
         from {
             top: 25%;
             left: 50%;
-            margin-left: -140px;
+            margin-left: -180px;
             opacity: 0;
         }
     
         to {
-            top: 47%;
+            top: 44%;
             left: 50%;
-            margin-left: -140px;
+            margin-left: -180px;
             opacity: 1;
         }
     }
 
-    ABOUT SECTION
+    /* ABOUT SECTION */
     .about-me div:nth-child(1) img {
         width: 25vw;
     }
@@ -680,18 +778,9 @@ footer {
         padding: 25px 0 25px 5px;
     }
 
-    PROJECTS SECTION
-    #main-img {
-        width: 75vw;
-    }
-
-    .wrapped-img {
-        width: 70vw;
-    }
-
-    CONTACT SECTION
+    /* CONTACT SECTION */
     #contact ul {
-        font-size: 2vw;
+        font-size: 1.75vw;
     }
 
     #contact ul li {
@@ -702,7 +791,7 @@ footer {
     #contact div {
         width: 70vw;
     }
-} */
+}
 
 
 /* iPAD AIR LANDSCAPE MODE */
@@ -1279,7 +1368,6 @@ and (device-height: 800px) {
 
 
 
-
 @media screen and (orientation: portrait) and (max-width: 1000px) {
     .comet {
     transform: rotate(-15deg);
@@ -1322,50 +1410,58 @@ and (device-height: 800px) {
 
 
 
-@media screen and (orientation: portrait) and (max-width: 769px) {
+@media screen and (orientation: portrait) and (max-width: 768px) {
     header nav ul {
         padding: 2px 0;
     }
 
     #base-triangle {
-        max-width: 500px;
-        margin-left: -250px;
-        margin-top: -250px;    
+        max-width: 420px;
+        margin-left: -210px;
+        margin-top: -210px;   
     }
 
     #upper-triangle, #lower-triangle {
-        max-width: 450px;
-        margin-left: -225px;   
+        max-width: 360px;
+        margin-left: -180px;
+    }
+
+    #upper-triangle {
+        top: 40%;
+    }
+
+    #lower-triangle {
+        top: 44%;
     }
 
     @keyframes upper {
         from {
-            top: 20%;
+            top: 15%;
             left: 50%;
-            margin-left: -225px;
+            margin-left: -180px;
             opacity: 0;
         }
     
         to {
             top: 40%;
             left: 50%;
-            margin-left: -225px;
+            margin-left: -180px;
             opacity: 1;
         }
     }
 
     @keyframes lower {
         from {
-            top: 30%;
+            top: 25%;
             left: 50%;
-            margin-left: -225px;
+            margin-left: -180px;
             opacity: 0;
         }
     
         to {
-            top: 45%;
+            top: 44%;
             left: 50%;
-            margin-left: -225px;
+            margin-left: -180px;
             opacity: 1;
         }
     }
