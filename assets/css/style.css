@@ -271,8 +271,6 @@ header nav ul li a {
     z-index: 1;
 }
 
-
-
 .about-me div:nth-child(2) {
     text-align: center;
     width: 60%;
@@ -335,7 +333,6 @@ header nav ul li a {
 
 .skills p {
     padding: 30px 0 30px 10px;
-
     background: linear-gradient(45deg, #383737 0%,#202020 100%);
     width: 30vw;
 }
@@ -362,12 +359,6 @@ header nav ul li a {
     transition: .5s;
 }
 
-#main-img:hover {
-    width: 1050px;
-    height: auto;
-    opacity: .5;
-}
-
 #main-title {
     font-size: 24px;
     margin: 12% 0 2% 0;
@@ -391,12 +382,6 @@ header nav ul li a {
     height: auto;
     border: 3px solid antiquewhite;
     transition: .5s;
-}
-
-.wrapped-img:hover {
-    width: 650px;
-    height: auto;
-    opacity: .5;
 }
 
 .wrapped-titles {
@@ -482,27 +467,20 @@ footer {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1900px) {
-
+    /* PROJECTS SECTION */
     #main-img {
         width: 55vw;
     }
 
-    #main-img:hover {
-        width: 58vw;
-    }
-
     .wrapped-img {
         width: 50vw;
-    }
-
-    .wrapped-img:hover {
-        width: 53vw;
     }
 }
 
 @media screen 
 and (max-width: 1000px)
 and (min-width: 768px) {
+    /* HERO SECTION */
     #base-triangle {
         max-width: 420px;
         margin-left: -210px;
@@ -519,7 +497,7 @@ and (min-width: 768px) {
     }
 
     #lower-triangle {
-        top: 44%;
+        top: 46%;
     }
 
     @keyframes upper {
@@ -547,7 +525,7 @@ and (min-width: 768px) {
         }
     
         to {
-            top: 44%;
+            top: 46%;
             left: 50%;
             margin-left: -180px;
             opacity: 1;
@@ -559,6 +537,8 @@ and (min-width: 768px) {
 @media screen 
 and (orientation: landscape) 
 and (max-width: 1000px)
+and (hover: none) 
+and (pointer: coarse)
  {
     /* HERO SECTION */
     #base-triangle {
@@ -661,17 +641,10 @@ and (max-width: 1000px)
         width: 90vw;
     }
 
-    #main-img:hover {
-        width: 93vw;
-    }
-
     .wrapped-img {
         width: 80vw;
     }
 
-    .wrapped-img:hover {
-        width: 83vw;
-    }
     /* CONTACT SECTION */
     #contact div {
         width: 70vw;
@@ -709,7 +682,7 @@ and (min-width: 1000px) {
     }
 
     #lower-triangle {
-        top: 44%;
+        top: 46%;
     }
 
     @keyframes upper {
@@ -737,7 +710,7 @@ and (min-width: 1000px) {
         }
     
         to {
-            top: 44%;
+            top: 46%;
             left: 50%;
             margin-left: -180px;
             opacity: 1;
@@ -1131,11 +1104,6 @@ and (device-height: 912px) {
     }
 }
 
-
-
-
-
-
 /* NEST HUB LANDSCAPE MODE */
 @media screen 
 and (orientation: landscape) 
@@ -1363,9 +1331,6 @@ and (device-height: 800px) {
 }
 
 
-
-
-
 @media screen and (orientation: portrait) and (max-width: 1000px) {
     .comet {
     transform: rotate(-15deg);
@@ -1389,16 +1354,8 @@ and (device-height: 800px) {
         width: 90vw;
     }
 
-    #main-img:hover {
-        width: 95vw;
-    }
-
     .wrapped-img {
         width: 80vw;
-    }
-
-    .wrapped-img:hover {
-        width: 85vw;
     }
 
     #contact div {
@@ -1547,9 +1504,9 @@ and (max-width: 575px) {
 }
 
 @media screen and (max-width: 500px) {
-header div p {
+    header div p {
     padding-left: 0;
-}
+    }
 
     #upper {
         top: 29vh;
