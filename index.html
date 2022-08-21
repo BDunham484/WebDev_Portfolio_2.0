@@ -4,169 +4,188 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Brad Dunham - Web Developer</title>
-        <meta name="description" content="Brad Dunham's personal web development portfolio site.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Montserrat:wght@300&display=swap"
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Brad Dunham - Web Developer</title>
+    <meta name="description" content="Brad Dunham's personal web development portfolio site.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Montserrat:wght@300&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="../Portfolio_2.0/assets/css/style.css">
-    </head>
-    <body>
-        <!-- HEADER / NAVIGATION
+    <link rel="stylesheet" href="../Portfolio_2.0/assets/css/style.css">
+</head>
+
+<body>
+    <!-- HEADER / NAVIGATION
          -->
-        <header>
-            <div>
-                <h1>
-                    Brad Dunham
-                </h1>
-                <p>
-                    Web Developer
+    <header>
+        <div>
+            <h1>
+                Brad Dunham
+            </h1>
+            <p>
+                Web Developer
+            </p>
+        </div>
+        <!-- NAV LINKS -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="typing">
+                <p id="upper">
+                    Hello! My name is Brad Dunham...
+                </p>
+                <p id="lower">
+                    ...and I love making websites!
                 </p>
             </div>
-            <!-- NAV LINKS -->
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li> 
-                </ul>
-            </nav>
-        </header>
-        <!-- MAIN CONTENT -->
-        <main>
-            <!-- HERO SECTION -->
-            <section class="hero">
-                <div class="typing">
-                    <p id="upper">
-                        Hello! My name is Brad Dunham...
-                    </p>
-                    <p id="lower">
-                        ...and I love making websites!
-                    </p>
-                </div>
-                <div id="hero-images-container">
-                    <img id="base-triangle" src="./assets/images/textured-triangle.png" alt="large dark triangle with golden border">
-                    
-                    <img id="upper-triangle" src="./assets/images/antique-white-triangle.png" alt="clear triangle with a thin golden border pointing down">
+            <div id="hero-images-container">
+                <img id="base-triangle" src="./assets/images/textured-triangle.png"
+                    alt="large dark triangle with golden border">
 
-                    <img id="lower-triangle" src="./assets/images/antique-white-triangle.png" alt="clear triangle with a thin golden border pointing down">
+                <img id="upper-triangle" src="./assets/images/antique-white-triangle.png"
+                    alt="clear triangle with a thin golden border pointing down">
 
-                    <img class="comet const-comet" src="https://www.freeiconspng.com/thumbs/comet/comet-transparent-background-image-11.png" alt="a comet">   
-                 </div>     
-            </section>
-            <!-- ABOUT SECTION -->
-            <section id="about">
-                <div class="about-me">
-                    <div>
-                        <img src="./assets/images/selfie.png" alt="half of my face in black and white with a neon triangle floating around it">
-                    </div>
-                    <div>
-                        <h2>
-                            ABOUT ME...
-                        </h2>
-                        <p>
-                            I have a strong desire to build visually appealing, fast, and responsive websites.  I'm currently enrolled in U.T. Austin's Coding Bootcamp to help push my skills and know-how to the next level as I start my search for employment.
-                        </p>
-                    </div>
-                    <div>
-                        <img src="./assets/images/lighter-textured-triangle.png" alt="small light grey textured triangle with a gold border">
-                    </div>
-                </div>
-                <div class="skill-lists">
-                    <ul class="list-styles">
-                        <li class="bullet-design-left"></li>
-                        <li class="bullet-design-left"></li>
-                        <li class="bullet-design-left"></li>
-                        <li class="bullet-design-left"></li>
-                        <li class="bullet-design-left"></li>
-                        <li class="bullet-design-left"></li>
-                    </ul>
-                    <ul class="list-styles">
-                        <li class="bullet-design-right"></li>
-                        <li class="bullet-design-right"></li>
-                        <li class="bullet-design-right"></li>
-                        <li class="bullet-design-right"></li>
-                        <li class="bullet-design-right"></li>
-                        <li class="bullet-design-right"></li>
-                    </ul>
-                    <div class="list-styles skills">
-                        <p>FAST</p>
-                        <p>RESPONSIVE</p>
-                        <p>HTML</p>
-                        <p>CSS</p>
-                        <p>JAVASCRIPT</p>
-                        <p>PHOTOSHOP</p>
-                    </div>      
-                </div>
-            </section>
-            <!-- PROJECTS SECTION -->
-            <section id="projects">
+                <img id="lower-triangle" src="./assets/images/antique-white-triangle.png"
+                    alt="clear triangle with a thin golden border pointing down">
+
+                <img class="comet const-comet"
+                    src="https://www.freeiconspng.com/thumbs/comet/comet-transparent-background-image-11.png"
+                    alt="a comet">
+            </div>
+        </section>
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <div class="about-me">
                 <div>
-                    <p id="main-title">
-                        MOOKIES
+                    <img src="./assets/images/selfie.png"
+                        alt="half of my face in black and white with a neon triangle floating around it">
+                </div>
+                <div>
+                    <h2>
+                        ABOUT ME...
+                    </h2>
+                    <p>
+                        I have a strong desire to build visually appealing, fast, and responsive websites. I'm currently
+                        enrolled in U.T. Austin's Coding Bootcamp to help push my skills and know-how to the next level
+                        as I start my search for employment.
                     </p>
-                    <a href="https://enterusernamee.github.io/project1/"><img id="main-img" src="./assets/images/mookies-screenshot.png" alt="the mookies home page"></a>
                 </div>
-                <div class="project-wrapper">
-                    <div>
-                        <p class="wrapped-titles">
-                            RUN BUDDY
-                        </p>
-                        <a href="https://bdunham484.github.io/run-buddy/"><img class="wrapped-img" src="./assets/images/run-buddy-screenshot.png" alt="women tying shoe outside.  there is a contact form as well."></a>
-                    </div>
-                    <div>
-                        <p class="wrapped-titles">
-                            RUSTY BLADE BARBERSHOP
-                        </p>
-                        <a href="https://bdunham484.github.io/rusty-blade-barbershop/"><img class="wrapped-img" src="./assets/images/barbershop-screenshot.png" alt="barbershop logo with two hands. one holding a comb, the other a straight razor."></a>
-                    </div>
-                    <div>
-                        <p class="wrapped-titles">
-                            RUN APP
-                        </p>
-                        <a href="https://bdunham484.github.io/Landing-Page-1/"><img class="wrapped-img" src="./assets/images/runapp-screenshot.png" alt="a woman running in the background. there is a cell phone in the foreground."></a>
-                    </div>
-                    <div>
-                        <p class="wrapped-titles">
-                            ORBIT WATCHES
-                        </p>
-                        <a href="https://www.orbit-watches.com"><img class="wrapped-img" src="./assets/images/orbit-watches-home.png" alt="a neon sign in front of a black brick wall that reads 'orbit-watches'."></a>
-                    </div>  
+                <div>
+                    <img src="./assets/images/lighter-textured-triangle.png"
+                        alt="small light grey textured triangle with a gold border">
                 </div>
-            </section>
-            <!-- CONTACT SECTION -->
-            <section id="contact">
-                <h2>
-                    CONTACT ME
-                </h2>
-               <div>
-                   <ul>
-                       <li>555.555.5555</li>
-                       <li><a href="mailto: bdunham484@gmail.com">Bdunham484@gmail.com</a></li>
-                       <li><a href="https://github.com/BDunham484">Github</a></li>
-                       <li><a href="https://www.linkedin.com/in/brad-dunham-56581b1b3">Linkedin</a></li>
-                   </ul>
-               </div>
-            </section>
-        </main>
-        <!-- END MAIN CONTENT -->
-        <!-- FOOTER -->
-        <footer>
-                     
-        </footer>
-    </body>
+            </div>
+            <div class="skill-lists">
+                <ul class="list-styles">
+                    <li class="bullet-design-left"></li>
+                    <li class="bullet-design-left"></li>
+                    <li class="bullet-design-left"></li>
+                    <li class="bullet-design-left"></li>
+                    <li class="bullet-design-left"></li>
+                    <li class="bullet-design-left"></li>
+                </ul>
+                <ul class="list-styles">
+                    <li class="bullet-design-right"></li>
+                    <li class="bullet-design-right"></li>
+                    <li class="bullet-design-right"></li>
+                    <li class="bullet-design-right"></li>
+                    <li class="bullet-design-right"></li>
+                    <li class="bullet-design-right"></li>
+                </ul>
+                <div class="list-styles skills">
+                    <p>FAST</p>
+                    <p>RESPONSIVE</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JAVASCRIPT</p>
+                    <p>PHOTOSHOP</p>
+                </div>
+            </div>
+        </section>
+        <!-- PROJECTS SECTION -->
+        <section id="projects">
+            <div>
+                <p id="main-title">
+                    MOOKIES
+                </p>
+                <a href="https://boiling-plateau-13571.herokuapp.com/login"><img id="main-img"
+                        src="./assets/images/petSpace-screenshot.png" alt="petSpace login page"></a>
+            </div>
+            <div class="project-wrapper">
+                <div>
+                    <p class="wrapped-titles">
+                        RUN BUDDY
+                    </p>
+                    <a href="https://bdunham484.github.io/project1/"><img class="wrapped-img"
+                            src="./assets/images/mookies-screenshot.png"
+                            alt="women tying shoe outside.  there is a contact form as well."></a>
+                </div>
+                <div>
+                    <p class="wrapped-titles">
+                        RUSTY BLADE BARBERSHOP
+                    </p>
+                    <a href="https://bdunham484.github.io/rusty-blade-barbershop/"><img class="wrapped-img"
+                            src="./assets/images/barbershop-screenshot.png"
+                            alt="barbershop logo with two hands. one holding a comb, the other a straight razor."></a>
+                </div>
+                <div>
+                    <p class="wrapped-titles">
+                        RUN APP
+                    </p>
+                    <a href="https://bdunham484.github.io/Landing-Page-1/"><img class="wrapped-img"
+                            src="./assets/images/runapp-screenshot.png"
+                            alt="a woman running in the background. there is a cell phone in the foreground."></a>
+                </div>
+                <div>
+                    <p class="wrapped-titles">
+                        ORBIT WATCHES
+                    </p>
+                    <a href="https://www.orbit-watches.com"><img class="wrapped-img"
+                            src="./assets/images/orbit-watches-home.png"
+                            alt="a neon sign in front of a black brick wall that reads 'orbit-watches'."></a>
+                </div>
+            </div>
+        </section>
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <h2>
+                CONTACT ME
+            </h2>
+            <div>
+                <ul>
+                    <li>555.555.5555</li>
+                    <li><a href="mailto: bdunham484@gmail.com">Bdunham484@gmail.com</a></li>
+                    <li><a href="https://github.com/BDunham484">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/brad-dunham-56581b1b3">Linkedin</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!-- END MAIN CONTENT -->
+    <!-- FOOTER -->
+    <footer>
+
+    </footer>
+</body>
+
 </html>
-
-
