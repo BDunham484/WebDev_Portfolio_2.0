@@ -1609,7 +1609,7 @@ footer {
     }
 
     
-    .hover-effect .content:hover {
+    /* .hover-effect .content:hover {
         opacity: 0;
     }
     
@@ -1624,7 +1624,7 @@ footer {
         opacity: 0;
         transform: translateY(0);
         -webkit-transform: translateY(0);
-    }
+    } */
 }
 
 
@@ -1702,7 +1702,7 @@ footer {
         font-size: 3vw;
     }
 
-    
+/*     
     .hover-effect .content:hover {
         opacity: 0;
     }
@@ -1718,7 +1718,7 @@ footer {
         opacity: 0;
         transform: translateY(0);
         -webkit-transform: translateY(0);
-    }
+    } */
 }
 
 @media screen and (orientation: portrait) and (max-width: 575px) {
@@ -1785,7 +1785,7 @@ footer {
     }
 
     
-    .hover-effect .content:hover {
+    /* .hover-effect .content:hover {
         opacity: 0;
     }
     
@@ -1800,7 +1800,7 @@ footer {
         opacity: 0;
         transform: translateY(0);
         -webkit-transform: translateY(0);
-    }
+    } */
 }
 
 @media screen and (max-width: 800px) and (min-width: 500px) {
@@ -1930,7 +1930,7 @@ footer {
     }
 
     
-    .hover-effect .content:hover {
+    /* .hover-effect .content:hover {
         opacity: 0;
     }
     
@@ -1945,7 +1945,7 @@ footer {
         opacity: 0;
         transform: translateY(0);
         -webkit-transform: translateY(0);
-    }
+    } */
 }
 
 @media screen and (max-width: 500px) {
