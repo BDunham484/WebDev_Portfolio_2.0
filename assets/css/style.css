@@ -1511,7 +1511,7 @@ and (pointer: coarse) {
         background-image: url(../images/hamish-weir-cuO6_mnbgPE-unsplash.jpg);
         background-size: auto 100%;
         background-position: center;  
-        background-attachment: fixed;
+        /* background-attachment: fixed; */
     }
 }
 
