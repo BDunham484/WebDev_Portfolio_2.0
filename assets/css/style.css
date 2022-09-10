@@ -408,6 +408,7 @@ header nav ul li a {
 }
 
 .content {
+    display: block;
     opacity: 0;
     font-size: 20px;
     padding: 0 7vw;
@@ -762,6 +763,14 @@ footer {
 
     .wrapped-img {
         width: 80vw;
+    }
+
+    .content {
+        display: none;
+    }
+
+    .text {
+        display: none;
     }
 
     /* CONTACT SECTION */
