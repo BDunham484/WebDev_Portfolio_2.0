@@ -1508,8 +1508,8 @@ and (pointer: coarse) {
         height: 100vh;
         width: 100vw;
         /* Photo by <a href="https://unsplash.com/@el_ham?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hamish Weir</a> on <a href="https://unsplash.com/s/photos/night-sky?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
-        background-image: url(../images/space-mobile.png);
-        background-size: cover;
+        background-image: url(../images/hamish-weir-cuO6_mnbgPE-unsplash.jpg);
+        background-size: auto 100%;
         background-position: center;  
         background-attachment: fixed;
     }
