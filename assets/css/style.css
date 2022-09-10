@@ -258,7 +258,7 @@ header nav ul li a {
 
 /* ABOUT SECTION STYLES START */
 #about {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -277,10 +277,20 @@ header nav ul li a {
     z-index: 1;
 }
 
+/* .about-me div:nth-child(1) img {
+    width: 15vw;
+} */
+
+#about-selfie img{
+    width: 25vh;
+}
+
 .about-me div:nth-child(2) {
     text-align: center;
     width: 60%;
-    padding: 30px;
+    min-height: 60vh;
+    margin-bottom: 5vh;
+    padding: 6vh 2vw;
     letter-spacing: 3px;
     line-height: 1.3;
     background: linear-gradient(135deg, #202020 0%,#2b3036 100%);
@@ -291,7 +301,13 @@ header nav ul li a {
 }
 
 .about-me div:nth-child(2) p {
-    font-size: 2vh;
+    /* font-size: 2vh; */
+    font-size: 26px;
+    padding-top: 5%;
+}
+
+#lower-triangle-small-screen {
+    display: none;
 }
 
 .skill-lists {
@@ -301,7 +317,7 @@ header nav ul li a {
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, #202020 0%,#2b3036 100%);
-    padding: 7vh 0 0 0;
+    padding: 3vh 0;
     text-shadow: 0 0 10px #80b5f5;
 }
 
@@ -311,7 +327,7 @@ header nav ul li a {
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    height: 100%;
+    min-height: 100%;
 }
 
 .bullet-design-left {
@@ -331,14 +347,15 @@ header nav ul li a {
 }
 
 .skills {
-    font-size: max(2vw, 28px);
+    /* font-size: max(1vw, 28px); */
+    font-size: 20px;
     align-items: flex-start;
     letter-spacing: 5px;
     padding-left: 5px;
 }
 
 .skills p {
-    padding: 30px 0 30px 10px;
+    padding: 10px 0 10px 10px;
     background: linear-gradient(45deg, #383737 0%,#202020 100%);
     width: 30vw;
 }
@@ -483,10 +500,10 @@ footer {
     }
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
     .about-me {
         width: 100%;
-       
+
     }
 
     .skill-lists {
@@ -497,7 +514,7 @@ footer {
     #projects {
         margin-top: 100vh;
     }
-}
+} */
 
 @media screen 
 and (max-width: 1000px)
@@ -616,13 +633,22 @@ and (pointer: coarse)
 
 
     /* ABOUT SECTION */
-    .about-me div:nth-child(1) img {
+    /* .about-me div:nth-child(1) img {
         width: 25vw;
+    } */
+
+    .about-image-triangle-left img{
+        width: 10vw;
+        margin-right: -2vw;
+    }
+    .about-image-triangle-right img{
+        width: 10vw;
+        margin-left: -2vw;
     }
 
-    .about-me div:nth-child(2) h2 {
+    /* .about-me div:nth-child(2) h2 {
         font-size: 3vh;
-    }
+    } */
 
     .about-me div:nth-child(2) {
         width: 90%;
@@ -633,11 +659,11 @@ and (pointer: coarse)
         width: 8vw;
         height: auto;
     }
-
+/* 
     .list-styles {
         height: 70%;
         margin-top: 7vh;
-    }
+    } */
 
     .bullet-design-left {
         padding-left: 25px;
@@ -651,7 +677,8 @@ and (pointer: coarse)
     }
 
     .skills {
-        font-size: 1.5vw;
+        /* font-size: 1.5vw; */
+        font-size: 20px;
     }
 
     .skills p {
@@ -683,10 +710,56 @@ and (pointer: coarse)
     }
 }
 
+@media screen
+and (max-width: 1200px) {
+    /* .about-me div:nth-child(2) {
+        width: 90%;
+    } */
+
+    #about {
+        flex-direction: column;
+    }
+
+    .about-me {
+        width: 100%;
+    }
+
+    .about-image-triangle-left {
+        margin-right: 0;
+    }
+
+    .about-image-triangle-right {
+        margin-left: 0;
+    }
+
+    .skill-lists {
+        width: 100%;
+    }
+
+    /* .skills {
+        min-height: 100vh;
+    } */
+
+    .skills p {
+        width: 50vw;
+    }
+
+    .list-styles {
+        min-height: 100vh;
+    }
+}
+
+@media screen
+and (min-width: 1585px){
+    .about-me div:nth-child(2) p {
+        font-size: 26px !important;
+    }
+}
+
 
 @media screen 
 and (max-width: 2000px)
-and (min-width: 1000px) {
+and (min-width: 1200px) {
     /* HERO SECTION */
     #base-triangle {
         max-width: 420px;
@@ -740,35 +813,53 @@ and (min-width: 1000px) {
     }
 
     /* ABOUT SECTION */
-    .about-me div:nth-child(1) img {
+    /* .about-me div:nth-child(1) img {
         width: 25vw;
-    }
-
-    .about-me div:nth-child(2) h2 {
-        font-size: 3vh;
-    }
-
+    } */
     .about-me div:nth-child(2) {
+        width: 80%;
+    }
+
+    .about-me div:nth-child(2) p {
+        font-size: 22px;
+    
+        /* padding: 3vh 2vw; */
+    }
+
+    .about-image-triangle-left img{
+        width: 10vw;
+        margin-right: -2vw;
+    }
+    .about-image-triangle-right img{
+        width: 10vw;
+        margin-left: -2vw;
+    }
+
+    /* .about-me div:nth-child(2) h2 {
+        font-size: 3vh;
+    } */
+
+    /* .about-me div:nth-child(2) {
         width: 90%;
         padding: 10px;
-    }
+    } */
 
     .about-me div:nth-child(3) img {
         width: 8vw;
         height: auto;
     }
 
-    .list-styles {
+    /* .list-styles {
         height: 80%;
         margin-top: 7vh;
-    }
+    } */
 
-    .skills {
+    /* .skills {
         font-size: 1.5vw;
-    }
+    } */
 
     .skills p {
-        padding: 25px 0 25px 5px;
+        padding: 10px 0 10px 5px;
     }
 
     /* CONTACT SECTION */
@@ -783,6 +874,13 @@ and (min-width: 1000px) {
 
     #contact div {
         width: 70vw;
+    }
+}
+
+@media screen
+and (min-width: 2300px) {
+    .about-me div:nth-child(2) p {
+        padding-top: 8%;
     }
 }
 
@@ -845,9 +943,18 @@ and (device-height: 820px) {
     }
 
     /* ABOUT SECTION */
-    .about-me div:nth-child(1) img {
+    /* .about-me div:nth-child(1) img {
         width: 25vw;
+    } */
+
+    /* .about-image-triangle-left img{
+        width: 10vw;
+        margin-right: -2vw;
     }
+    .about-image-triangle-right img{
+        width: 10vw;
+        margin-left: -2vw;
+    } */
 
     .about-me div:nth-child(2) h2 {
         font-size: 3vh;
@@ -863,10 +970,10 @@ and (device-height: 820px) {
         height: auto;
     }
 
-    .list-styles {
+    /* .list-styles {
         height: 80%;
         margin-top: 7vh;
-    }
+    } */
 
     .skills {
         font-size: 1.5vw;
@@ -958,10 +1065,10 @@ and (device-height: 768px) {
     }
 
     /* ABOUT SECTION */
-    .about-me div:nth-child(1) img {
+    /* .about-me div:nth-child(1) img {
         width: 25vw;
-    }
-
+    } */
+   
     .about-me div:nth-child(2) h2 {
         font-size: 3vh;
     }
@@ -976,10 +1083,10 @@ and (device-height: 768px) {
         height: auto;
     }
 
-    .list-styles {
+    /* .list-styles {
         height: 80%;
         margin-top: 7vh;
-    }
+    } */
 
     .skills {
         font-size: 1.5vw;
@@ -1071,9 +1178,9 @@ and (device-height: 912px) {
     }
 
     /* ABOUT SECTION */
-    .about-me div:nth-child(1) img {
+    /* .about-me div:nth-child(1) img {
         width: 25vw;
-    }
+    } */
 
     .about-me div:nth-child(2) h2 {
         font-size: 3vh;
@@ -1089,10 +1196,10 @@ and (device-height: 912px) {
         height: auto;
     }
 
-    .list-styles {
+    /* .list-styles {
         height: 80%;
         margin-top: 7vh;
-    }
+    } */
 
     .skills {
         font-size: 1.5vw;
@@ -1184,8 +1291,15 @@ and (device-height: 600px) {
     }
 
     /* ABOUT SECTION */
-    .about-me div:nth-child(1) img {
+    /* .about-me div:nth-child(1) img {
         width: 25vw;
+    } */
+    .about-image-triangle-left img {
+        width: 10vw;
+    }
+
+    .about-image-triangle-right img {
+        width: 10vw;
     }
 
     .about-me div:nth-child(2) h2 {
@@ -1197,23 +1311,27 @@ and (device-height: 600px) {
         padding: 10px;
     }
 
+    .about-me div:nth-child(2) p {
+        font-size: 16px;
+    }
+
     .about-me div:nth-child(3) img {
         width: 8vw;
         height: auto;
     }
 
-    .list-styles {
-        height: 80%;
+    /* .list-styles {
+        min-height: 80%;
         margin-top: 7vh;
-    }
+    } */
 
     .skills {
         font-size: 1.5vw;
     }
 
-    .skills p {
+    /* .skills p {
         padding: 25px 0 25px 5px;
-    }
+    } */
 
     /* PROJECTS SECTION */
     #main-img {
@@ -1299,9 +1417,9 @@ and (pointer: coarse) {
     }
 
     /* ABOUT SECTION */
-    .about-me div:nth-child(1) img {
+    /* .about-me div:nth-child(1) img {
         width: 25vw;
-    }
+    } */
 
     .about-me div:nth-child(2) h2 {
         font-size: 3vh;
@@ -1317,18 +1435,18 @@ and (pointer: coarse) {
         height: auto;
     }
 
-    .list-styles {
+    /* .list-styles {
         height: 80%;
         margin-top: 7vh;
-    }
+    } */
 
     .skills {
         font-size: 1.5vw;
     }
 
-    .skills p {
+    /* .skills p {
         padding: 25px 0 25px 5px;
-    }
+    } */
 
     /* PROJECTS SECTION */
     #main-img {
@@ -1360,10 +1478,10 @@ and (pointer: coarse) {
     transform: rotate(-15deg);
     }
 
-    .about-me div:nth-child(1) img {
+    /* .about-me div:nth-child(1) img {
         width: 50vw;
         height: auto;
-    }
+    } */
     
     .about-me div:nth-child(3) img {
         width: 13vw;
@@ -1454,7 +1572,8 @@ and (pointer: coarse) {
     }
 
     .about-me div:nth-child(2) p {
-        font-size: 1.5vh;
+        /* font-size: 1.5vh; */
+        font-size: 28px;
     }
 
     #contact ul {
@@ -1527,6 +1646,109 @@ and (max-width: 575px) {
     }
 }
 
+@media screen
+and (max-width: 800px)
+and (min-width: 500px) {
+    .about-image-triangle-left img {
+        width: 20vw;
+        margin-right: -10vw;
+    }
+
+    .about-image-triangle-right img {
+        width: 20vw;
+        margin-left: -10vw;
+    }
+
+    .about-me div:nth-child(2) p {
+        font-size: 20px;
+    }
+
+    .about-me div:nth-child(2) {
+        padding: 6vh 4vw;
+    }
+
+    #lower-triangle-small-screen {
+        display: block;
+        transform: rotate(180deg);
+        margin-top: 14%;
+    }
+
+    .skills p {
+        width: 80vw;
+    }
+}
+
+@media screen
+and (orientation: landscape)
+and (max-width: 800px)
+and (min-width: 500px) {
+    .about-image-triangle-left img {
+        width: 10vw;
+        margin-right: 5vw;
+    }
+
+    .about-image-triangle-right img {
+        width: 10vw;
+        margin-left: 5vw;
+    }
+
+    .list-styles {
+        min-height: 100vh;
+    }
+
+    .list-styles li {
+        display: none;
+    }
+
+    /* .skill-lists {
+        min-height: 100vh;
+    } */
+
+    .skills {
+        font-size: 16px;
+    }
+}
+
+@media screen
+and (orientation: landscape) {
+    .list-styles li {
+        display: none;
+    }
+
+    .about-me div:nth-child(2) p {
+        font-size: 16px;
+        padding-top: 0;
+    }
+
+    .skills {
+        font-size: 16px;
+    }
+
+    .skills p {
+        padding: 10px 0 10px 5px;
+        margin: 2vh 0;
+    }
+
+    #about-selfie img {
+        width: 31vh;
+    }
+
+    #lower-triangle-small-screen {
+        display: block;
+        transform: rotate(180deg);
+        margin-top: 5vh;
+    }
+}
+
+@media screen
+and (orientation: landscape)
+and (min-width: 1000px) {
+    .about-me div:nth-child(2) p {
+        font-size: 20px;
+        padding-top: 5%;
+    }
+}
+
 @media screen and (max-width: 500px) {
     header div p {
     padding-left: 0;
@@ -1587,40 +1809,48 @@ and (max-width: 575px) {
         }
     }
 
-    .about-me {
+    /* .about-me {
         height: 95vh;
         padding-top: 15vh;
-    }
+    } */
 
-    .about-me div:nth-child(2) h2 {
+    /* .about-me div:nth-child(2) h2 {
         font-size: 3vw;
-    }
+    } */
 
     .about-me div:nth-child(2) {
         padding: 10px;
     }
 
-    .bullet-design-left {
+    .about-me div:nth-child(2) p {
+        font-size: 16px;
+    }
+
+    .about-image-triangle-left img {
+        display: none;
+    }
+
+    .about-image-triangle-right img {
+        display: none;
+    }
+
+    /* .bullet-design-left {
         padding-left: 25px;
         padding-top: 4px;
         padding-bottom: 4px;
         
-    }
+    } */
     
-    .bullet-design-right {
+    /* .bullet-design-right {
         padding-left: 15px;
-    }
+    } */
 
     .skills {
-        font-size: 2vw;
+        font-size: 16px;
     }
 
     .skills p {
-        padding: 15px 0 15px 5px;
-    }
-
-    .list-styles {
-        height: 85%;
+        width: 80vw;
     }
 
     #main-title {
@@ -1630,6 +1860,7 @@ and (max-width: 575px) {
 
     #contact ul li {
         padding: 30px 0 30px 5px;
+        min-width: 85%;
     }
 
 }
