@@ -32,8 +32,8 @@ header {
     width: 100vw;
     opacity: .90;
     background-image: url(../images/hamish-weir-cuO6_mnbgPE-unsplash.jpg) no-repeat center;
-    background-size: cover;
-    background-position: center; 
+    /* background-size: cover; */
+    /* background-position: center;  */
     /* background-attachment: fixed; */
 }
 
