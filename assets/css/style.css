@@ -34,7 +34,7 @@ header {
     background-image: url(../images/hamish-weir-cuO6_mnbgPE-unsplash.jpg);
     background-size: cover;
     background-position: center; 
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 header div {
@@ -80,7 +80,7 @@ header nav ul li a {
     background-image: url(../images/hamish-weir-cuO6_mnbgPE-unsplash.jpg);
     background-size: cover;
     background-position: center;  
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 /* TYPING STYLES / ANIMATION START*/
