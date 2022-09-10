@@ -9,7 +9,8 @@
     background-color: transparent;
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -76,7 +77,7 @@ header nav ul li a {
     /* Photo by <a href="https://unsplash.com/@el_ham?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hamish Weir</a> on <a href="https://unsplash.com/s/photos/night-sky?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
     background-image: url(../images/hamish-weir-cuO6_mnbgPE-unsplash.jpg);
     background-size: cover;
-    background-position: center;  
+    background-position: center;
     /* background-attachment: fixed; */
 }
 
@@ -122,6 +123,7 @@ header nav ul li a {
     from {
         width: 0;
     }
+
     to {
         width: 100%;
     }
@@ -131,10 +133,12 @@ header nav ul li a {
     from {
         opacity: 1;
     }
+
     to {
         opacity: 0;
     }
 }
+
 /* TYPING STYLES / ANIMATION END */
 
 
@@ -226,13 +230,14 @@ header nav ul li a {
     transform: rotate(10deg);
     max-width: 75px;
     max-height: auto;
-} 
+}
 
 @keyframes comet {
     from {
         top: -25vh;
         right: -25vw;
     }
+
     to {
         top: 100vh;
         right: 100vw;
@@ -244,11 +249,13 @@ header nav ul li a {
         top: -25vh;
         right: -25vw;
     }
+
     to {
         top: 100vh;
         right: 100vw;
     }
 }
+
 /* HERO IMAGES STYLES / ANIMATION END */
 /* HERO SECTION STYLES END */
 
@@ -259,7 +266,7 @@ header nav ul li a {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background: linear-gradient(45deg, #383737 0%,#202020 100%);
+    background: linear-gradient(45deg, #383737 0%, #202020 100%);
 }
 
 .about-me {
@@ -269,7 +276,7 @@ header nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background: linear-gradient(45deg, #383737 0%,#202020 100%);
+    background: linear-gradient(45deg, #383737 0%, #202020 100%);
     padding-top: 4%;
     z-index: 1;
 }
@@ -278,7 +285,7 @@ header nav ul li a {
     width: 15vw;
 } */
 
-#about-selfie img{
+#about-selfie img {
     width: 25vh;
 }
 
@@ -290,7 +297,7 @@ header nav ul li a {
     padding: 6vh 2vw;
     letter-spacing: 3px;
     line-height: 1.3;
-    background: linear-gradient(135deg, #202020 0%,#2b3036 100%);
+    background: linear-gradient(135deg, #202020 0%, #2b3036 100%);
 }
 
 .about-me div:nth-child(2) h2 {
@@ -313,7 +320,7 @@ header nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #202020 0%,#2b3036 100%);
+    background: linear-gradient(135deg, #202020 0%, #2b3036 100%);
     padding: 3vh 0;
     text-shadow: 0 0 10px #80b5f5;
 }
@@ -334,7 +341,7 @@ header nav ul li a {
     padding-left: 40px;
     padding-top: 8px;
     padding-bottom: 8px;
-    
+
 }
 
 .bullet-design-right {
@@ -353,9 +360,10 @@ header nav ul li a {
 
 .skills p {
     padding: 10px 0 10px 10px;
-    background: linear-gradient(45deg, #383737 0%,#202020 100%);
+    background: linear-gradient(45deg, #383737 0%, #202020 100%);
     width: 30vw;
 }
+
 /* ABOUT SECTION STYLES END */
 
 /* PROJECTS SECTION STYLES START */
@@ -363,13 +371,76 @@ header nav ul li a {
     width: 100vw;
     min-height: 100vh;
     background: linear-gradient(0deg, #0a1f25 0, #0e1316 100%);
-    background-image: url(../images/transparent-5-moon-180.png),linear-gradient(0deg, #0a1f25 0, #0e1316 100%); 
+    background-image: url(../images/transparent-5-moon-180.png), linear-gradient(0deg, #0a1f25 0, #0e1316 100%);
     background-position: center;
-    background-size: cover;   
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.hover-effect {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.content {
+    opacity: 0;
+    font-size: 20px;
+    padding: 0 7vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: antiquewhite;
+    background-color: #4c4b4bE6;
+    height: 99%;
+    width: 100%;
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+    text-align: center;
+}
+
+.hover-effect .content:hover {
+    opacity: 1;
+}
+
+.hover-effect .content .text {
+    height: 0;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+}
+
+.hover-effect .content:hover .text {
+    opacity: 1;
+    transform: translateY(6vh);
+    -webkit-transform: translateY(6vh);
 }
 
 #main-img {
@@ -411,6 +482,7 @@ header nav ul li a {
     text-shadow: 0 0 10px #80b5f5;
     text-align: center;
 }
+
 /* PROJECTS SECTION STYLES END */
 
 /* CONTACT SECTION STYLES START */
@@ -429,7 +501,7 @@ header nav ul li a {
     font-size: 30px;
     padding-bottom: 3%;
     text-shadow: 0 0 10px #80b5f5;
-    
+
 }
 
 #contact div {
@@ -459,7 +531,7 @@ header nav ul li a {
 
 #contact ul li {
     padding: 30px 0 30px 10px;
-    background: linear-gradient(45deg, #383737 0%,#202020 100%);
+    background: linear-gradient(45deg, #383737 0%, #202020 100%);
     width: 75%;
 }
 
@@ -476,6 +548,7 @@ footer {
     width: 100%;
     height: 6vh;
 }
+
 /* FOOTER STYLES END */
 
 
@@ -487,6 +560,7 @@ footer {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1900px) {
+
     /* PROJECTS SECTION */
     #main-img {
         width: 55vw;
@@ -513,17 +587,17 @@ footer {
     }
 } */
 
-@media screen 
-and (max-width: 1000px)
-and (min-width: 768px) {
+@media screen and (max-width: 1000px) and (min-width: 768px) {
+
     /* HERO SECTION */
     #base-triangle {
         max-width: 420px;
         margin-left: -210px;
-        margin-top: -210px;   
+        margin-top: -210px;
     }
 
-    #upper-triangle, #lower-triangle {
+    #upper-triangle,
+    #lower-triangle {
         max-width: 360px;
         margin-left: -180px;
     }
@@ -543,7 +617,7 @@ and (min-width: 768px) {
             margin-left: -180px;
             opacity: 0;
         }
-    
+
         to {
             top: 41%;
             left: 50%;
@@ -559,7 +633,7 @@ and (min-width: 768px) {
             margin-left: -180px;
             opacity: 0;
         }
-    
+
         to {
             top: 45%;
             left: 50%;
@@ -570,22 +644,19 @@ and (min-width: 768px) {
 
 }
 
-@media screen 
-and (orientation: landscape) 
-and (max-width: 1000px)
-and (hover: none) 
-and (pointer: coarse)
- {
+@media screen and (orientation: landscape) and (max-width: 1000px) and (hover: none) and (pointer: coarse) {
+
     /* HERO SECTION */
     #base-triangle {
         max-width: 200px;
         margin-left: -100px;
-        margin-top: -110px;    
+        margin-top: -110px;
     }
 
-    #upper-triangle, #lower-triangle {
+    #upper-triangle,
+    #lower-triangle {
         max-width: 175px;
-        margin-left: -87.5px;   
+        margin-left: -87.5px;
     }
 
     #upper-triangle {
@@ -603,7 +674,7 @@ and (pointer: coarse)
             margin-left: -87.5px;
             opacity: 0;
         }
-    
+
         to {
             top: 37%;
             left: 50%;
@@ -619,7 +690,7 @@ and (pointer: coarse)
             margin-left: -87.5px;
             opacity: 0;
         }
-    
+
         to {
             top: 41%;
             left: 50%;
@@ -634,11 +705,12 @@ and (pointer: coarse)
         width: 25vw;
     } */
 
-    .about-image-triangle-left img{
+    .about-image-triangle-left img {
         width: 10vw;
         margin-right: -2vw;
     }
-    .about-image-triangle-right img{
+
+    .about-image-triangle-right img {
         width: 10vw;
         margin-left: -2vw;
     }
@@ -656,7 +728,8 @@ and (pointer: coarse)
         width: 8vw;
         height: auto;
     }
-/* 
+
+    /* 
     .list-styles {
         height: 70%;
         margin-top: 7vh;
@@ -666,9 +739,9 @@ and (pointer: coarse)
         padding-left: 25px;
         padding-top: 4px;
         padding-bottom: 4px;
-        
+
     }
-    
+
     .bullet-design-right {
         padding-left: 15px;
     }
@@ -707,8 +780,7 @@ and (pointer: coarse)
     }
 }
 
-@media screen
-and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     /* .about-me div:nth-child(2) {
         width: 90%;
     } */
@@ -746,25 +818,24 @@ and (max-width: 1200px) {
     }
 }
 
-@media screen
-and (min-width: 1585px){
+@media screen and (min-width: 1585px) {
     .about-me div:nth-child(2) p {
         font-size: 26px !important;
     }
 }
 
 
-@media screen 
-and (max-width: 2000px)
-and (min-width: 1200px) {
+@media screen and (max-width: 2000px) and (min-width: 1200px) {
+
     /* HERO SECTION */
     #base-triangle {
         max-width: 420px;
         margin-left: -210px;
-        margin-top: -210px;   
+        margin-top: -210px;
     }
 
-    #upper-triangle, #lower-triangle {
+    #upper-triangle,
+    #lower-triangle {
         max-width: 360px;
         margin-left: -180px;
     }
@@ -784,7 +855,7 @@ and (min-width: 1200px) {
             margin-left: -180px;
             opacity: 0;
         }
-    
+
         to {
             top: 40%;
             left: 50%;
@@ -800,7 +871,7 @@ and (min-width: 1200px) {
             margin-left: -180px;
             opacity: 0;
         }
-    
+
         to {
             top: 45%;
             left: 50%;
@@ -819,15 +890,16 @@ and (min-width: 1200px) {
 
     .about-me div:nth-child(2) p {
         font-size: 22px;
-    
+
         /* padding: 3vh 2vw; */
     }
 
-    .about-image-triangle-left img{
+    .about-image-triangle-left img {
         width: 10vw;
         margin-right: -2vw;
     }
-    .about-image-triangle-right img{
+
+    .about-image-triangle-right img {
         width: 10vw;
         margin-left: -2vw;
     }
@@ -874,8 +946,7 @@ and (min-width: 1200px) {
     }
 }
 
-@media screen
-and (min-width: 2300px) {
+@media screen and (min-width: 2300px) {
     .about-me div:nth-child(2) p {
         padding-top: 8%;
     }
@@ -883,18 +954,17 @@ and (min-width: 2300px) {
 
 
 /* iPAD AIR LANDSCAPE MODE */
-@media screen 
-and (orientation: landscape)
-and (device-width: 1180px)
-and (device-height: 820px) {
+@media screen and (orientation: landscape) and (device-width: 1180px) and (device-height: 820px) {
+
     /* HERO SECTION */
     #base-triangle {
         max-width: 320px;
         margin-left: -160px;
-        margin-top: -160px;   
+        margin-top: -160px;
     }
 
-    #upper-triangle, #lower-triangle {
+    #upper-triangle,
+    #lower-triangle {
         max-width: 280px;
         margin-left: -140px;
     }
@@ -914,7 +984,7 @@ and (device-height: 820px) {
             margin-left: -140px;
             opacity: 0;
         }
-    
+
         to {
             top: 43%;
             left: 50%;
@@ -930,7 +1000,7 @@ and (device-height: 820px) {
             margin-left: -140px;
             opacity: 0;
         }
-    
+
         to {
             top: 47%;
             left: 50%;
@@ -1005,18 +1075,17 @@ and (device-height: 820px) {
 }
 
 /* iPAD MINI LANDSCAPE MODE */
-@media screen 
-and (orientation: landscape)
-and (device-width: 1024px)
-and (device-height: 768px) {
+@media screen and (orientation: landscape) and (device-width: 1024px) and (device-height: 768px) {
+
     /* HERO SECTION */
     #base-triangle {
         max-width: 320px;
         margin-left: -160px;
-        margin-top: -160px;   
+        margin-top: -160px;
     }
 
-    #upper-triangle, #lower-triangle {
+    #upper-triangle,
+    #lower-triangle {
         max-width: 280px;
         margin-left: -140px;
     }
@@ -1036,7 +1105,7 @@ and (device-height: 768px) {
             margin-left: -140px;
             opacity: 0;
         }
-    
+
         to {
             top: 43%;
             left: 50%;
@@ -1052,7 +1121,7 @@ and (device-height: 768px) {
             margin-left: -140px;
             opacity: 0;
         }
-    
+
         to {
             top: 47%;
             left: 50%;
@@ -1065,7 +1134,7 @@ and (device-height: 768px) {
     /* .about-me div:nth-child(1) img {
         width: 25vw;
     } */
-   
+
     .about-me div:nth-child(2) h2 {
         font-size: 3vh;
     }
@@ -1118,18 +1187,17 @@ and (device-height: 768px) {
 }
 
 /* SURFACE PRO 7 LANDSCAPE MODE */
-@media screen 
-and (orientation: landscape)
-and (device-width: 1368px)
-and (device-height: 912px) {
+@media screen and (orientation: landscape) and (device-width: 1368px) and (device-height: 912px) {
+
     /* HERO SECTION */
     #base-triangle {
         max-width: 320px;
         margin-left: -160px;
-        margin-top: -160px;   
+        margin-top: -160px;
     }
 
-    #upper-triangle, #lower-triangle {
+    #upper-triangle,
+    #lower-triangle {
         max-width: 280px;
         margin-left: -140px;
     }
@@ -1149,7 +1217,7 @@ and (device-height: 912px) {
             margin-left: -140px;
             opacity: 0;
         }
-    
+
         to {
             top: 43%;
             left: 50%;
@@ -1165,7 +1233,7 @@ and (device-height: 912px) {
             margin-left: -140px;
             opacity: 0;
         }
-    
+
         to {
             top: 47%;
             left: 50%;
@@ -1231,18 +1299,17 @@ and (device-height: 912px) {
 }
 
 /* NEST HUB LANDSCAPE MODE */
-@media screen 
-and (orientation: landscape) 
-and (device-width: 1024px)
-and (device-height: 600px) {
+@media screen and (orientation: landscape) and (device-width: 1024px) and (device-height: 600px) {
+
     /* HERO SECTION */
     #base-triangle {
         max-width: 320px;
         margin-left: -160px;
-        margin-top: -160px;   
+        margin-top: -160px;
     }
 
-    #upper-triangle, #lower-triangle {
+    #upper-triangle,
+    #lower-triangle {
         max-width: 280px;
         margin-left: -140px;
     }
@@ -1262,7 +1329,7 @@ and (device-height: 600px) {
             margin-left: -140px;
             opacity: 0;
         }
-    
+
         to {
             top: 35%;
             left: 50%;
@@ -1278,7 +1345,7 @@ and (device-height: 600px) {
             margin-left: -140px;
             opacity: 0;
         }
-    
+
         to {
             top: 40%;
             left: 50%;
@@ -1355,20 +1422,17 @@ and (device-height: 600px) {
 }
 
 /* NEST HUB MAX LANDSCAPE MODE */
-@media screen 
-and (orientation: landscape) 
-and (device-width: 1280px)
-and (device-height: 800px)
-and (hover: none) 
-and (pointer: coarse) {
+@media screen and (orientation: landscape) and (device-width: 1280px) and (device-height: 800px) and (hover: none) and (pointer: coarse) {
+
     /* HERO SECTION */
     #base-triangle {
         max-width: 320px;
         margin-left: -160px;
-        margin-top: -160px;   
+        margin-top: -160px;
     }
 
-    #upper-triangle, #lower-triangle {
+    #upper-triangle,
+    #lower-triangle {
         max-width: 280px;
         margin-left: -140px;
     }
@@ -1388,7 +1452,7 @@ and (pointer: coarse) {
             margin-left: -140px;
             opacity: 0;
         }
-    
+
         to {
             top: 40%;
             left: 50%;
@@ -1404,7 +1468,7 @@ and (pointer: coarse) {
             margin-left: -140px;
             opacity: 0;
         }
-    
+
         to {
             top: 45%;
             left: 50%;
@@ -1472,14 +1536,14 @@ and (pointer: coarse) {
 
 @media screen and (orientation: portrait) and (max-width: 1000px) {
     .comet {
-    transform: rotate(-15deg);
+        transform: rotate(-15deg);
     }
 
     /* .about-me div:nth-child(1) img {
         width: 50vw;
         height: auto;
     } */
-    
+
     .about-me div:nth-child(3) img {
         width: 13vw;
         height: auto;
@@ -1507,7 +1571,7 @@ and (pointer: coarse) {
         /* Photo by <a href="https://unsplash.com/@el_ham?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hamish Weir</a> on <a href="https://unsplash.com/s/photos/night-sky?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
         background-image: url(../images/hamish-weir-cuO6_mnbgPE-unsplash.jpg);
         background-size: auto 100%;
-        background-position: center;  
+        background-position: center;
         /* background-attachment: fixed; */
     }
 }
@@ -1522,10 +1586,11 @@ and (pointer: coarse) {
     #base-triangle {
         max-width: 420px;
         margin-left: -210px;
-        margin-top: -210px;   
+        margin-top: -210px;
     }
 
-    #upper-triangle, #lower-triangle {
+    #upper-triangle,
+    #lower-triangle {
         max-width: 360px;
         margin-left: -180px;
     }
@@ -1545,7 +1610,7 @@ and (pointer: coarse) {
             margin-left: -180px;
             opacity: 0;
         }
-    
+
         to {
             top: 40%;
             left: 50%;
@@ -1561,7 +1626,7 @@ and (pointer: coarse) {
             margin-left: -180px;
             opacity: 0;
         }
-    
+
         to {
             top: 45%;
             left: 50%;
@@ -1588,9 +1653,7 @@ and (pointer: coarse) {
     }
 }
 
-@media screen 
-and (orientation: portrait)
-and (max-width: 575px) {
+@media screen and (orientation: portrait) and (max-width: 575px) {
     header nav ul {
         margin-right: 5vw;
         width: 37vw;
@@ -1603,12 +1666,13 @@ and (max-width: 575px) {
     #base-triangle {
         max-width: 320px;
         margin-left: -160px;
-        margin-top: -160px;    
+        margin-top: -160px;
     }
 
-    #upper-triangle, #lower-triangle {
+    #upper-triangle,
+    #lower-triangle {
         max-width: 280px;
-        margin-left: -140px;   
+        margin-left: -140px;
     }
 
     @keyframes upper {
@@ -1618,7 +1682,7 @@ and (max-width: 575px) {
             margin-left: -140px;
             opacity: 0;
         }
-    
+
         to {
             top: 40%;
             left: 50%;
@@ -1634,7 +1698,7 @@ and (max-width: 575px) {
             margin-left: -140px;
             opacity: 0;
         }
-    
+
         to {
             top: 45%;
             left: 50%;
@@ -1653,9 +1717,7 @@ and (max-width: 575px) {
     }
 }
 
-@media screen
-and (max-width: 800px)
-and (min-width: 500px) {
+@media screen and (max-width: 800px) and (min-width: 500px) {
     .about-image-triangle-left img {
         width: 20vw;
         margin-right: -10vw;
@@ -1685,10 +1747,7 @@ and (min-width: 500px) {
     }
 }
 
-@media screen
-and (orientation: landscape)
-and (max-width: 800px)
-and (min-width: 500px) {
+@media screen and (orientation: landscape) and (max-width: 800px) and (min-width: 500px) {
     .about-image-triangle-left img {
         width: 10vw;
         margin-right: 5vw;
@@ -1716,10 +1775,7 @@ and (min-width: 500px) {
     }
 }
 
-@media screen
-and (orientation: landscape)
-and (min-device-width: 100px)
-and (max-device-width: 1200px) {
+@media screen and (orientation: landscape) and (min-device-width: 100px) and (max-device-width: 1200px) {
     .list-styles li {
         display: none;
     }
@@ -1749,9 +1805,7 @@ and (max-device-width: 1200px) {
     }
 }
 
-@media screen
-and (orientation: landscape)
-and (min-width: 1000px) {
+@media screen and (orientation: landscape) and (min-width: 1000px) {
     .about-me div:nth-child(2) p {
         font-size: 20px;
         padding-top: 5%;
@@ -1760,7 +1814,7 @@ and (min-width: 1000px) {
 
 @media screen and (max-width: 500px) {
     header div p {
-    padding-left: 0;
+        padding-left: 0;
     }
 
     #upper {
@@ -1774,12 +1828,13 @@ and (min-width: 1000px) {
     #base-triangle {
         max-width: 250px;
         margin-left: -125px;
-        margin-top: -125px;    
+        margin-top: -125px;
     }
 
-    #upper-triangle, #lower-triangle {
+    #upper-triangle,
+    #lower-triangle {
         max-width: 225px;
-        margin-left: -112.5px;   
+        margin-left: -112.5px;
     }
 
     #upper-triangle {
@@ -1793,7 +1848,7 @@ and (min-width: 1000px) {
             margin-left: -112.5px;
             opacity: 0;
         }
-    
+
         to {
             top: 42.5%;
             left: 50%;
@@ -1809,7 +1864,7 @@ and (min-width: 1000px) {
             margin-left: -112.5px;
             opacity: 0;
         }
-    
+
         to {
             top: 45%;
             left: 50%;
@@ -1849,7 +1904,7 @@ and (min-width: 1000px) {
         padding-bottom: 4px;
         
     } */
-    
+
     /* .bullet-design-right {
         padding-left: 15px;
     } */
@@ -1865,7 +1920,7 @@ and (min-width: 1000px) {
     #main-title {
         margin: 32% 0 2% 0;
     }
-    
+
 
     #contact ul li {
         padding: 30px 0 30px 5px;
@@ -1873,9 +1928,3 @@ and (min-width: 1000px) {
     }
 
 }
-
-
-
-
-
-
