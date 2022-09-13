@@ -431,6 +431,9 @@ header nav ul li a {
     border-radius: 35px;
     box-shadow: inset 10px 10px 20px #050e11,
                 inset -10px -10px 20px #0f3039;
+    -webkit-box-shadow: inset 10px 10px 20px #050e11,
+                inset -10px -10px 20px #0f3039;
+    
 }
 
 .project-text-container {
